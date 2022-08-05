@@ -1,0 +1,163 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clickMe{
+    color: red;
+}
+
+/*
+p:not(#special){
+    font-weight: bold;
+}
+*/
+
+.divLettreCercle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body>nav ul li{
+    list-style-type: none;
+}
+
+body>nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+}
+
+body>nav ul li a:hover{
+    background-color: blue;
+    color: white;
+}
+
+main section article{
+    padding: 5px;
+    margin: 5px;
+}
+
+table{
+    border: 1px solid #000;
+}
+
+main section article table thead tr th{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+main section article table tbody tr td{
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+#allPosts, #allUsers{
+    width: 700px;
+    height: 300px;
+    border: 1px solid black;
+    overflow:auto;
+    padding: 5px;
+}
+
+.blocAnimate{
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+.threeStates{
+    width: 200px;
+    height: 50px;
+    background-color: crimson;
+    border: 1px solid black;
+    margin: 2px;
+}
+
+@media(min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media(min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media(min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+
+    body>nav{
+        height: 50px;
+    }
+
+    body>nav ul{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    main section{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section article{
+        max-width: 400px;
+    }
+
+    main section article:last-child:nth-child(2){
+        max-width: 900px;
+    }
+
+    main section article:first-child:last-child{
+        max-width: 1200px;
+    }
+
+}
+
+@media(min-width: 1200px){
+    .container{
+        max-width: 1440px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .container {
+        max-width: 1540px;
+    }
+}
